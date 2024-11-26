@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Details - Leaning Tower of Pisa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <header data-aos="fade-down">
@@ -13,12 +14,13 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="detailed.html">Details</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="main-content">
+          
             <section class="history" data-aos="fade-right">
                 <h2>History of the Leaning Tower of Pisa</h2>
                 <p>
@@ -27,7 +29,58 @@
                 </p>
                 <img src="historical.png" alt="Historical image of the Leaning Tower of Pisa" class="history-image">
             </section>
+
+            <section class="timeline">
+                <h2>Construction Timeline</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1173: Construction Begins</h3>
+                            <p>The foundation of the Leaning Tower of Pisa is laid, and construction begins under the guidance of architect Bonanno Pisano.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1185: First Signs of Tilt</h3>
+                            <p>The tilt begins to appear as a result of unstable soil beneath the tower’s foundation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1272: Construction Resumes</h3>
+                            <p>Construction resumes after several years of delay due to the tilt, with adjustments made to compensate for the lean.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1372: Completion of the Tower</h3>
+                            <p>The Leaning Tower of Pisa is completed after nearly 200 years of construction, still tilted but functional as a bell tower.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1990: Tower Closed for Safety Reasons</h3>
+                            <p>The Leaning Tower of Pisa is closed to the public due to fears that the tilt could cause it to collapse.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2001: Stabilization Efforts Begin</h3>
+                            <p>Engineers begin work on stabilizing the tower and reducing the tilt to ensure its safety.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2008: Tower Reopens</h3>
+                            <p>After extensive restoration and stabilization, the Leaning Tower of Pisa reopens to the public.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
+
+            
+          
             <section class="visiting-info" data-aos="fade-left">
                 <h2>Visiting Information</h2>
                 <div class="info-table" data-aos="zoom-in">
@@ -65,15 +118,39 @@
                     </table>
                 </div>
             </section>
-            
         </div>
+
+        <section class="faq" data-aos="fade-left">
+            <h2>Visitor Tips</h2>
+            <ul>
+                <li>Book tickets online in advance to avoid long queues.</li>
+                <li>Wear comfortable shoes, as the area around the tower involves a lot of walking.</li>
+                <li>Arrive early to enjoy the tower with fewer crowds.</li>
+            </ul>
+        
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>Is the tower still leaning?</dt>
+                <dd>Yes, although its tilt has been significantly reduced for safety reasons.</dd>
+                <dt>Can I climb the Leaning Tower of Pisa?</dt>
+                <dd>Yes, visitors are allowed to climb the tower, but it’s advisable to book tickets in advance.</dd>
+                <dt>How much time should I spend at the Leaning Tower of Pisa?</dt>
+                <dd>Most visitors spend around 1-2 hours at the site, including time to explore the surrounding piazza.</dd>
+            </dl>
+        </section>
+        
     </main>
     <footer>
         <p>2023 Leaning Tower of Pisa. All Rights Reserved.</p>
-        
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            easing: 'ease-out-back',
+            once: true,
+        });
+    </script>
 </body>
 </html>

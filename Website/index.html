@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="detailed.html">Details</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -32,18 +32,32 @@
         <section class="main-content" data-aos="fade-up">
             <h3>What is The Leaning Tower of Pisa?</h3>
             <p>The Leaning Tower of Pisa is one of the most remarkable architectural structures in the world. It is known for its unintended tilt, which began during construction due to unstable ground.</p>
+            <a href="detailed.html" class="cta-button">Discover More</a>
             <div class="iframe-container" data-aos="fade-up">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ-r8a9C4fE" title="YouTube video player"></iframe>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.8004788091025!2d10.396597!3d43.722952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d591a6c44e88cd%3A0x32eca9b1d554fc03!2sTower%20of%20Pisa!5e1!3m2!1sen!2sid!4v1730815260500" width="600" height="450"></iframe>
             </div>
         </section>
+
+        <section class="testimonials" data-aos="flip-up">
+            <h2>What Visitors Say</h2>
+            <blockquote>"A breathtaking piece of history that you must visit at least once in your life!"</blockquote>
+            <cite>- Tourist from France</cite>
+        </section>
     </main>
     <footer>
         <p>2023 Leaning Tower of Pisa. All Rights Reserved.</p>
         
+        
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            easing: 'ease-out-back',
+            once: true,
+        });
+    </script>
 </body>
 </html>

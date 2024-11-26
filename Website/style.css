@@ -5,11 +5,11 @@ body {
     background-repeat: no-repeat;
 }
 
-header, .jumbotron, .main-content, .info-table {
-    transition: transform 2s ease, opacity 0.6s ease; /* Adjusted to 0.6s for slower transitions */
+header, .jumbotron, .main-content, .info-table, .contact-form {
+    transition: transform 2s ease, opacity 0.6s ease; 
 }
 
-header:hover, .jumbotron:hover, .main-content:hover, .info-table:hover {
+header:hover, .jumbotron:hover, .main-content:hover, .info-table:hover ,.contact-form:hover{
     transform: scale(1.02);
     opacity: 0.95;
 }
@@ -176,4 +176,141 @@ table, th, td {
 .info-table ul {
     margin: 0;
     padding-left: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form select, form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2176bd;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.testimonials blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #888;
+}
+
+.history-timeline ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.history-timeline li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.faq {
+    background-color: #f4f4f481;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    text-align: center;
+}
+.faq ul{
+    text-align: left;
+}
+
+.faq dt {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.faq dd {
+    margin-left: 20px;
+    font-style: italic;
+    text-align: left;
+}
+
+.timeline {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f4f4f9;
+}
+
+.timeline h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 40px;
+}
+
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.timeline-item {
+    width: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
 }
